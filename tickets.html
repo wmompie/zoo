@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Local Zoo - Tickets</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/zoo_logo.png" alt="Local Zoo"></a>
+        <h1 class="local_zoo">Local Zoo</h1>
+        <nav>
+            <a class="nav" href="index.html">Home</a>
+			<a class="nav" href="map.html">Map</a>
+            <a class="nav" href="tickets.html">Tickets</a>
+		</nav>
+    </header>
+        <div class="center">
+            <h2 id="ticket">Order Tickets Here!<img class="ticket" src="img/ticket.png" alt="Picture of Tickets"></h2>
+            <section id="tabular">
+               <h3 class="admission">Daily Admission</h3>
+                   <table>
+                      <thead>
+                           <tr>
+                               <th>Guest</th>
+                               <th class=right_text>Price</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>Adult &#40;13&#43;&#41;</td>
+                               <td class=right_text>&#36;19.99</td>
+                           </tr>
+                           <tr>
+                               <td>Child &#40;3&ndash;12&#41;</td>
+                               <td class=right_text>&#36;15.99</td>
+                           </tr>
+                           <tr>
+                               <td>Children 2 and under</td>
+                               <td class=right_text>FREE</td>
+                           </tr>
+                           <tr>
+                               <td>Zoo Members</td>
+                               <td class=right_text>FREE</td>
+                           </tr>
+                           <tr>
+                               <td>Parking</td>
+                               <td class=right_text>FREE</td>
+                           </tr>
+                           <tr>
+                               <td>Valet Parking &#40;Weekends &#38; Holidays</td>
+                               <td class=right_text>&#36;8.00</td>
+                           </tr>
+                       </tbody>
+                   </table>
+                   <h4>Note&#58; Prices above do not include local 7&#37; sales tax</h4>
+                <h3 class="admission">Group Discounts</h3>
+                   <table>
+                      <thead>
+                           <tr>
+                               <th>Number of People</th>
+                               <th class=right_text>Discount</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>5&ndash;10 people</td>
+                               <td class=right_text>10&#37;</td>
+                           </tr>
+                           <tr>
+                               <td>10&ndash;15 people</td>
+                               <td class=right_text>15&#37;</td>
+                           </tr>
+                           <tr>
+                               <td>15&ndash;20 people</td>
+                               <td class=right_text>20&#37;</td>
+                           </tr>
+                           <tr>
+                               <td>20&ndash;35 people</td>
+                               <td class=right_text>25&#37;</td>
+                           </tr>
+                       </tbody>
+                   </table>
+            </section>
+            <section class="tiger" >
+                <img src="img/tiger.jpg" id="tiger" alt="tiger with cub at the zoo">
+            </section>
+            <section class="babymonkey" >
+                <img src="img/babymonkey.jpg" id="babymonkey" alt="picture of a baby monkey">
+            </section>
+            <form action="thanks.html" method="post">
+                <fieldset>
+			         <legend>Order Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required><br>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" required><br>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" required><br>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address" required><br>
+                        <label for="address2">Apt&#47;Suite#:</label>
+                        <input type="text" name="address2" id="address2"><br>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city" required><br>
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state" required maxlength="2"><br>
+                        <label for="zip">ZIP:</label>
+                        <input type="text" name="zip" id="zip" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" required placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format"><br>
+                        <label for="ticket_no">Number of Tickets:</label>
+                        <input type="number" name="ticket_no" id="ticket_no" required min="1" max="35"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Method</legend>
+                        <div id="payment">
+                            <input type="radio" name="payment_type" id="debit" value="bill">
+                            <label for="debit">Debit</label>
+                            <input type="radio" name="payment_type" id="credit" value="credit">
+                            <label for="credit">Credit</label><br>
+                        </div>
+                        <label for="card_type">Credit Card</label>
+                            <select name="card_type" id="card_type">
+                                <option value="v">Visa</option>
+                                <option value="m">Master Card</option>
+                                <option value="a">American Express</option>
+                            </select><br>
+                        <label for="card_number">Card Number</label>
+                        <input type="text" id="card_number" required pattern="\d{16}" placeholder="16 digits" title="Must be 16 digits"><br>
+                        <label for="exp_month">Expiration Date</label>
+                            <select name="exp_month" id="exp_month">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>       
+                        <label for="exp_year"></label>
+                            <select name="exp_year" id="exp_year">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select>
+                </fieldset>
+                <fieldset id="btn">
+                    <legend>Submit Your Order</legend>
+                        <input type="submit" id="submit" value="Submit">
+                        <input type="reset" id="reset" value="Reset Fields">
+                </fieldset>
+            </form>
+        </div>
+    <footer>
+        <small>&copy; Copyright 2016 Local Zoo by William Mompie, all rights reserved</small>
+    </footer>
+</body>
+</html>

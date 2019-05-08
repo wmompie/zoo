@@ -1,0 +1,398 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, el, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tfoot, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body {
+  line-height: 1;
+  }
+ol, ul {
+  list-style: none;
+  }
+blockquote, q {
+  quotes: none;
+  }
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+  }
+
+
+  
+/*My Styles*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, el, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    background-color: #eee;
+    font-size: 100%;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-image: url(../img/greenblur.jpg);
+    background-repeat: no-repeat;
+    border: .25em solid #444;
+}
+h2 {
+    font-size: 3em;
+    width: auto;
+}
+h3 {
+    font-size: 2em;
+    margin: 1%;
+}
+
+/* Beginning of - Logo */
+.logo {
+    width: 120px;
+    height: 50%;
+    padding: 10px;
+}
+/* End of - Logo */
+
+/* Beginning of - Local Zoo in header*/
+.local_zoo {
+    color: black;
+    font-size: 3em;
+    float: right; 
+    margin-right: 1%;
+    padding-top: 40px;
+}
+.local_zoo:before, .local_zoo:after {
+    content: "";
+    display: table;
+}
+.local_zoo:after {
+    clear: both;
+}
+.local_zoo {
+    clear: both;
+}
+/* End of - Local Zoo in header */
+
+/* Beginning of - Navigation Bar */
+.nav {
+    padding: 3px 11px;
+    display: inline-block;
+    color: #eee;
+    background-color: transparent;
+    border: .20em solid #006400;
+    margin-left: 2%;
+    margin: 1%;
+}
+nav a:hover {
+	background-color: #777;
+    color: #006400;
+}
+/* End of - Navigation bar */
+
+/* Beginning of - center of the page */
+.center {
+    background-color: #78ab12;
+    border: .25em solid #444;
+}
+.center:before, .center:after {
+    content: "";
+    display: table;
+}
+.center:after {
+    clear: both;
+}
+.center {
+    clear: both;
+}
+.pictures {
+    width: 25%;
+    margin-left: 6%;
+}
+.home_desc {
+    font-size: 1.55em;
+    line-height: 130%;
+    padding: 1%;
+}
+span {
+    font-weight: bold;
+    color: #006400;
+}
+.external {
+    text-align: center;
+    margin: 1%;
+}
+#external {
+    color: #006400;
+}
+#external a:hover {
+    color: #eee;
+}
+/* End of - center of the page */
+/*  */
+/* Beginning of - bottom of the homepage */
+.banner {
+    background-color: #444;
+    color: #999;
+    padding: 1%;
+}
+.banner:before, .banner:after {
+    content: "";
+    display: table;
+}
+.banner:after {
+    clear: both;
+}
+.banner {
+    clear: both;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+.left_p {
+    font-size: 1.55em;
+    padding: 1%;
+    width: auto;
+}
+.right {
+    float: right;
+    width: 40%;
+}
+.right_p_1 {
+    font-size: 20px;
+    padding: 1%;
+    width: auto;
+}
+.right_p {
+    font-size: 18px;
+    padding: 1%;
+    width: auto;
+}
+.home_bot {
+    padding: 1%;
+    font-size: 1.15em;
+    line-height: 130%;
+}
+.home_bot:before, .home_bot:after {
+    content: "";
+    display: table;
+}
+.home_bot:after {
+    clear: both;
+}
+.home_bot {
+    clear: both;
+}
+/* End of - bottom of the homepage */
+
+/* Beginning of - center of the map page */
+#gmap {
+    display: inline-block;
+    margin: 10px;
+    width: 50%;
+    margin-left: 1%;
+}
+#gmap p {
+    line-height: 130%;
+    margin: 0 1%;
+}
+#large_map {
+    margin: 1%;
+    margin-left: 4%;
+    font-size: 1.4em;
+}
+#gmap_canvas {
+    margin: 1%;
+}
+.map_side {
+    display: inline-block;
+    width: 35%;
+    margin: 4%;
+    border: .1em solid #006400;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f9ce64;
+}
+.map_side p {
+    margin: 1%;
+    padding: 1%;
+    border: .1em dashed #006400;
+    border-radius: 10px;
+    line-height: 1.2em;
+}
+.giraffe {
+    width: 60px;
+    height: 30px;
+    padding: 1px;
+}
+.rhino {
+    width: 50px;
+    height: 30px;
+    padding: 2px;
+    background-color: #f9ce64;
+}
+.elephant {
+    width: 60px;
+    height: 30px;
+    padding: 2px;
+    margin-left: 8px;
+}
+/* End of - center of the map page */
+
+/* Beginning of - center of the tickets page */
+#ticket {
+    margin: 1%;
+    text-align: center;
+    color: #556B2F;
+}
+.ticket {
+    width: 70px;
+    height: 40px;
+    margin-left: 10px;
+}
+form {
+    margin: 1em;
+    width: 50%;
+    float: left;
+}
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+    border: .1em solid #006400;
+}
+legend {
+    color: #eee;
+}
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+input, select {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+input:required:invalid {
+    border: 2px solid #006400;
+    box-shadow: none;
+}
+input:valid {
+    border: 1px solid black;
+}
+#ticket_no {
+    width: 3em;
+}
+#state {
+    width: 1.5em;
+}
+#zip {
+    width: 7.5em;
+}
+#phone {
+    width: 6em;
+}
+#payment {
+    margin: 0 auto 1em;
+}
+#payment label {
+    float: none;
+}
+#payment input {
+    width: auto;
+    margin-left: 8em;
+}
+#exp_month {
+    width: 7em;
+}
+#exp_year {
+    width: 5em;
+}
+#btn input {
+    width: 10em;
+    margin-left: 8em;
+}
+#tabular {
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    width: 50%;
+    padding: 1%
+}
+.admission {
+    color: #eee;
+    text-align: center;
+    padding: 1%;
+}
+th {
+    text-align: left;
+    color: #ddd;
+    padding: 2%;
+    width: 15em;
+    border: .15em solid #006400;
+    background-color: #556B2F;
+}
+td {
+   border: .1em solid #006400; 
+}
+.right_text {
+    text-align: right;
+}
+h4 {
+    font-weight: bold;
+    font-size: small;
+    margin-top: 1%;
+    width: 40%;
+    text-align: center;
+}
+.tiger {
+    float: right;
+    width: 40%;
+}
+#tiger {
+    width: 90%;
+    margin: 1%;
+    margin-top: 20%;
+    border: .25em solid #006400;
+}
+.babymonkey {
+    float: right;
+    width: 40%;
+}
+#babymonkey {
+    width: 90%;
+    margin: 1%;
+    border: .25em solid #006400;
+}
+/* End of - center of the tickets page */
+
+/* Beginning of - Footer */
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #006400;
+    padding: 5px 0;    
+}
+/* End of - Footer */
+
+/* Beginning of - thank you page */
+#thanks {
+    text-align: center;
+    margin-top: 20%;
+    border: none;
+    line-height: 300%;
+}
+/* End of - thank you page */
